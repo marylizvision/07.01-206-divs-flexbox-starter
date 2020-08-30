@@ -112,7 +112,9 @@ body {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   font-weight: 700;
+  /* flex-flow: row; */
   justify-content: space-between;
+  align-items: center;
 }
 
 .div-1, .div-2, .div-3 {
@@ -122,7 +124,7 @@ body {
   display: flex;
   line-height: 1.5em;
   font-family: 'Playfair Display', Serif;
-  font-size: 1.6em;
+  font-size: 1em;
   justify-content: center;
   /* background-color: #f16059; */
   background-color:rgb(47,79,79);opacity:0.6;
@@ -132,14 +134,20 @@ body {
 
 .div-1 {
   background-image: url(../img/fellowship.jpg);
+  background-repeat: no-repeat;
+  /* min-width: 200px; */
 }
 
 .div-2 {
   background-image: url(../img/twotowers.jpg);
+  background-repeat: no-repeat;
+  /* min-width: 200px; */
 }
 
 .div-3 {
   background-image: url(../img/king.jpg);
+  background-repeat: no-repeat;
+  /* min-width: 200px; */
 }
 
 
@@ -228,6 +236,12 @@ body {
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
+}
+
+@media (min-width: 768px) {
+        h4 {
+          font-size: 1.6em;
+        }
 }
 
 /* ==========================================================================
