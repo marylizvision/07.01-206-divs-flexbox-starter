@@ -121,14 +121,26 @@ body {
   color: #fff;
   display: flex;
   line-height: 1.5em;
+  font-family: 'Playfair Display', Serif;
   font-size: 1.6em;
   justify-content: center;
-  background-color: #f16059;
+  /* background-color: #f16059; */
+  background-color:rgb(47,79,79);opacity:0.6;
   height: 300px;
   width: 30%;
 }
 
+.div-1 {
+  background-image: url(../img/fellowship.jpg);
+}
 
+.div-2 {
+  background-image: url(../img/twotowers.jpg);
+}
+
+.div-3 {
+  background-image: url(../img/king.jpg);
+}
 
 
 /* ==========================================================================
