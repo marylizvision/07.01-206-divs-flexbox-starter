@@ -112,10 +112,28 @@ body {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   font-weight: 700;
-  /* flex-flow: row; */
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
+
+.head {
+  display: flex;
+  font-family: 'Playfair Display', Serif;
+  font-size: 2em;
+  height: 10%;
+  width: 100%
+  /* flex-flow: row nowrap; */
+}
+
+main {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: 200;
+  margin: 40px 0px 0px 0px;
+  padding: 20px;
+}
+
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
@@ -148,6 +166,18 @@ body {
   background-image: url(../img/king.jpg);
   background-repeat: no-repeat;
   /* min-width: 200px; */
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  width: 100%;
+  /* background-color: lightblue; */
+}
+footer img {
+  padding: 10px;
 }
 
 
@@ -239,7 +269,15 @@ body {
 }
 
 @media (min-width: 768px) {
-        h4 {
+        .div-1 h4 {
+          font-size: 1.6em;
+        }
+
+        .div-2 h4 {
+          font-size: 1.6em;
+        }
+
+        .div-3 h4 {
           font-size: 1.6em;
         }
 }
